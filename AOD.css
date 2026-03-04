@@ -1,0 +1,227 @@
+body {
+            background-color: rgb(213, 134, 149);
+            text-align: center;
+            font-family: 'Cinzel', serif; /* Fixed typo */
+            color: #ffffff;
+            padding: 50px;
+            margin: 0;
+        }
+
+        /* --- 1. Navigation & Login --- */
+        .TopMenu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .TopMenu h4 {
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 0;
+        }
+
+        .TopMenu h4:hover {
+            color: lightpink;
+        }
+
+        .LogSign {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            color: rgb(237, 221, 127);
+        }
+
+        .LogSign h5 {
+            margin: 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .LogSign h5:hover {
+            color: white;
+        }
+
+        /* --- 2. The Hero Banner --- */
+        .angel-title {
+            background: linear-gradient(135deg, rgba(252, 228, 236, 0.3), rgba(243, 229, 245, 0.3));
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .banner-content h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .banner-content p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .wing-tag {
+            display: inline-block;
+            background: rgb(76, 202, 193);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .wing-tag:hover {
+            background: rgb(69, 255, 243);
+                        transform: scale(1.1) rotate(-2deg);
+
+        }
+
+        .banner-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            object-fit: cover;
+            border: 5px solid white;
+                
+        }
+
+        /* --- 3. Blocks & Agents --- */
+        .Aria-block-2 {
+            font-family: 'Dancing Script', cursive;
+            color: #a48053;
+            background-color: #fce4ec;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            font-size: 20px;
+        }
+
+        .Faction-Agents {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            justify-content: center;
+            
+        }
+        
+
+        /* FIXED: Removed the 30px height bug here */
+        .section3 .Aria img, 
+        .section3 .Sunna img, 
+        .section3 .Nangong img {
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 3px solid white;
+            background-color: white;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            border: 3px solid transparent;
+        }
+
+        .section3 .Aria img:hover, 
+        .section3 .Sunna img:hover, 
+        .section3 .Nangong img:hover {
+            border: 3px solid #f7d1ee;
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+                0 0 30px rgba(76, 202, 193, 0.6);
+                border-color: white;
+        }
+
+        .Aria, .Sunna, .Nangong {
+            text-align: center;
+        }
+
+        .footer {
+           display: flex;
+           justify-content: flex-end;
+            margin-top: 50px;
+            font-size: small;
+            opacity: 0.8;
+        }
+        .Color-Palette {
+            max-width: 200px;
+        }
+        .pinkp {
+            border: 50px;
+            background-color: #f7d1ee;
+border-radius: 50px;
+        }
+        .oceang {
+            border: 50px;
+            background-color: #69fff3;
+border-radius: 50px;
+        }
+        .delusionp {
+            border: 50px;
+            background-color: #de5f66;
+border-radius: 50px;
+        }
+        .parsimoonb {
+            border: 50px;
+            background-color: #4c4a56;
+border-radius: 50px;
+        }
+        .aria-sticker {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid white;
+        }
+        .aria-chibi {
+            display: flex;
+            justify-self:left;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+            border-radius: 20px;
+            border: 3px solid white;
+            background-color: white;
+        }
+        .TrioChibis {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 40px;
+            position: inherit;
+        }
+        .TrioChibis h3{
+            display: flex;
+            justify-content: center;
+            top: auto;
+            gap: 20px;
+        }
